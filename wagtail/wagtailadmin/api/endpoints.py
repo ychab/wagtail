@@ -16,7 +16,7 @@ from .filters import HasChildrenFilter
 class PagesAdminAPIEndpoint(PagesAPIEndpoint):
     base_serializer_class = AdminPageSerializer
 
-    # Use unrestricted filters child_of/descendant_of filters
+    # Use unrestricted child_of/descendant_of filters
     # Add has_children filter
     filter_backends = [
         FieldsFilter,
